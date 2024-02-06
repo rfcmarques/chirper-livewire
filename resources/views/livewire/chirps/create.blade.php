@@ -1,9 +1,23 @@
 <?php
 
 use Livewire\Volt\Component;
+use Livewire\Attributes\Rule;
 
 new class extends Component {
+    #[Rule('required|string|max:255')]
     public string $message = '';
+
+    public function store(): void
+    {
+        $validated = $this->validate();
+
+        auth()
+            ->user()
+            ->chirps()
+            ->create($validated);
+
+        $this->message = '';
+    }
 }; ?>
 
 <div>
