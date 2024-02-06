@@ -39,12 +39,12 @@ new class extends Component {
         $this->getChirps();
     }
 
-    public function delet(Chirp $chirp): void
+    public function delete(Chirp $chirp): void
     {
         $this->authorize('delete', $chirp);
-
-        $this->delete();
-
+ 
+        $chirp->delete();
+ 
         $this->getChirps();
     }
 }; ?>
