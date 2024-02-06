@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Welcome to [Chirper Livewire], a modern web application developed through the Laravel Bootcamp's Livewire path. This project leverages the power of Laravel and Livewire to create a dynamic, interactive microblogging platform called "Chirper". By focusing on server-driven applications, this project showcases real-time interactivity and reactivity without relying on JavaScript for the frontend logic. Perfect for developers looking for an efficient way to build sophisticated UIs with minimal complexity, [Chirper Livewire] demonstrates the practical implementation of Livewire's capabilities within a Laravel ecosystem.
+Welcome to **Chirper Livewire**, a modern web application developed through the Laravel Bootcamp's Livewire path. This project leverages the power of Laravel and Livewire to create a dynamic, interactive microblogging platform called "Chirper". By focusing on server-driven applications, this project showcases real-time interactivity and reactivity without relying on JavaScript for the frontend logic. Perfect for developers looking for an efficient way to build sophisticated UIs with minimal complexity, **Chirper Livewire** demonstrates the practical implementation of Livewire's capabilities within a Laravel ecosystem.
 
 ## Features
 
