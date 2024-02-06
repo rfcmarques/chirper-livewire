@@ -29,6 +29,15 @@ new class extends Component {
 
         $this->getChirps();
     }
+
+    #[On('chirp-edit-canceled')]
+    #[On('chirp-updated')]
+    public function disableEditing(): void
+    {
+        $this->editing = null;
+
+        $this->getChirps();
+    }
 }; ?>
 
 <div class="mt-6 bg-white shadow-sm rounded-lg divide-y">
@@ -68,11 +77,11 @@ new class extends Component {
                         </x-dropdown>
                     @endif
                 </div>
-                @if ($chirp->is($editing)) 
+                @if ($chirp->is($editing))
                     <livewire:chirps.edit :chirp="$chirp" :key="$chirp->id" />
                 @else
                     <p class="mt-4 text-lg text-gray-900">{{ $chirp->message }}</p>
-                @endif 
+                @endif
             </div>
         </div>
     @endforeach
